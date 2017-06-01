@@ -11,7 +11,8 @@ class Index
     }
 
     public function find() {
-      $articles = Db::name("article")->select();
+      // $articles = Db::name("article")->select();
+      $articles = model("Article")->page(3,1,10);
       $view = new View();
       $view->article = $articles;
       return $view->fetch();

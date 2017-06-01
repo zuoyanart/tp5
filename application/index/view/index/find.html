@@ -11,7 +11,14 @@
 </head>
 
 <body>
-{$article}
+  {volist name="article" id="vo"}
+  <a href="{$vo.link}">{$vo.title}</a><br/>
+  <img src="{$vo.timg}" style="width:500px;"/><br/>
+  <div>
+    {$vo.content}
+  </div>
+  {/volist}
+
 
 </body>
 
