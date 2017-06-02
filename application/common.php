@@ -81,3 +81,12 @@ function random_char($length) {
 
      return $newStr . $suffix;
  }
+
+
+ function formatJson($data) {
+   $json = [
+     'state'=>true,
+     'msg'=> $data
+   ];
+   return json_encode($json);
+ }

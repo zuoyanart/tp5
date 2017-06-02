@@ -1,0 +1,282 @@
+/**
+* @Author: 左盐
+* @Date:   2017-16-03 14:56:40
+* @Email:  huabinglan@163.com
+* @Project: XXXXXXXX
+* @Last modified by:   左盐
+* @Last modified time: 2017-16-03 15:21:22
+*/
+@import './var.less';
+@import '../../../../assets/less/mixin.less';
+
+.header-menu {
+  line-height: 64px;
+  width: 100%;
+  height: 64px;
+  background-color: #232323;
+
+  .header-menu-c {
+    position: relative;
+    width: @body-width;
+    height: 100%;
+    margin: 0 auto;
+
+    img {
+      height: 60px;
+      margin-top: 3px;
+    }
+
+    div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+      height: 100%;
+
+      a {
+        font-size: 14px;
+        line-height: 33px;
+        display: inline-block;
+        width: 90px;
+        height: 33px;
+        margin: 0 10px;
+        text-align: center;
+        color: #ccc;
+        text-decoration: none;
+      }
+    }
+
+    .router-link-active {
+      color: #fff;
+      background-color: @bgcolor-warning;
+      border-radius: 4px;
+    }
+  }
+}
+
+.item-gap {
+  width: 100%;
+  height: 126px;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  background-color: #F4F4F4;
+  text-align: center;
+  color: #4c4c4c;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  h2 {
+    margin-top: 36px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.index-service-item {
+  width: 1210px;
+  height: 257px;
+  margin: 0 auto;
+  clear: both;
+  margin-top: 60px;
+
+  .index-service-item-sub {
+    width: 292px;
+    height: 257px;
+    background-color: #f7f7f7;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 50px;
+
+    i {
+      font-size: 70px;
+    }
+
+    h2 {
+      color: #333;
+      line-height: 40px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #7F7F7F;
+      font-size: 12px;
+    }
+  }
+}
+
+.index-aboutus {
+  width: @body-width;
+  margin: 30px auto;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  color: #7f7f7f;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+
+  p {
+    text-align: left;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+}
+
+.index-kouhao {
+  width: @body-width;
+  height: 331px;
+  clear: both;
+  margin: 0 auto;
+
+  div {
+    width: 399px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    padding-left: 20px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    h3 {
+      font-size: 34px;
+      color: #8e8e8e;
+    }
+
+    h4 {
+      font-size: 20px;
+      color: #fda562;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: #7f7f7f;
+      font-size: 14px;
+      line-height: 24px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.index-contact {
+  width: @body-width;
+  height: 442px;
+  margin: 0 auto 100px;
+  clear: both;
+
+  .index-contact-left {
+    float: left;
+    width: 850px;
+    height: 100%;
+    border: 1px solid #ccc;
+  }
+
+  .index-contact-right {
+    float: left;
+    width: 329px;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 50px;
+
+    p {
+      line-height: 30px;
+      color: #7f7f7f;
+      font-size: 14px;
+    }
+  }
+}
+
+#main {
+  clear: both;
+  width: @body-width;
+  min-height: 100px;
+  margin: 20px auto;
+
+  .crumb {
+    margin: 0 0 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  padding: 40px 0 100px;
+  background-color: #2a313d;
+
+  .footer-c {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #7b7b7b;
+  }
+}
+
+.online-cus {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 1000;
+  -webkit-transition: all ease 0.5s;
+
+  &:hover {
+    .online-cus-bh {
+      right: 0;
+    }
+  }
+
+  .online-cus-check {
+    transition: all ease 0.5s;
+    width: 26px;
+    height: 104px;
+    background-color: #009fe9;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    color: #fff;
+    padding-top: 12px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+
+  .online-cus-bh {
+    transition: all ease 0.5s;
+    position: absolute;
+    right: -200px;
+    width: 140px;
+    height: 180px;
+    border: 3px solid #F7BA2A;
+    background-color: #F7BA2A;
+    border-radius: 3px;
+    z-index: 10001;
+
+    h2 {
+      color: #fff;
+      font-size: 16px;
+      fongt-weight: 900;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    ul {
+      background-color: #fff;
+      width: 130px;
+      height: 130px;
+      padding: 1px 0 0 5px;
+
+      li {
+        margin: 5px 0;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
