@@ -9,10 +9,16 @@
      * @return [type] [description]
      */
       public function page() {
+        $defParam = [
+          'cp'=>1,
+          'mp'=>10,
+          'istp'=>false
+        ];
         $param = input('post.');
+        $param = array_merge($defParam, $param);
         $articleM = model("Article");
-        $articles = $articleM->page($param['nodeid'], $param['cp'], $param['mp']);
-        return formatJson($articles);
+        $articles = $articleM->page($param['nodeid'], $param['cp'], $param['mp'], $param['istp']);
+        return formatJson($articles['msg'], $articles['count']);
       }
       /**
        * get
@@ -21,7 +27,7 @@
        */
       public function get() {
         $param = input('post.');
-        $article = model("Article")->find($param['id']);
+        $article = model("Article")->get_data($param['id']);
         return formatJson($article);
       }
   }

@@ -83,10 +83,11 @@ function random_char($length) {
  }
 
 
- function formatJson($data) {
+ function formatJson($data, $count=0) {
    $json = [
      'state'=>true,
-     'msg'=> $data
+     'msg'=> $data,
+     'count'=>(int)$count
    ];
    return json_encode($json);
  }

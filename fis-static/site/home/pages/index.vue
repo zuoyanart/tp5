@@ -64,7 +64,7 @@
         <div class="index-contact-right">
             <el-button type="primary" style="width:100%;margin-bottom:30px;">发起咨询</el-button>
             <p>XXX省XXX市XXX区XXX大道东88号</p>
-            <p>service@zuoyanit.com</p>
+            <p>service@zuoyanit.comddd</p>
         </div>
      </div>
 </div>

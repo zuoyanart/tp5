@@ -62,7 +62,7 @@ export default {
       let sister = await this.$tools.httpAgent("/ajax/tree/sister", "post", {
         nodeid: nodeid
       });
-      this.data = sister.nodelist;
+      this.data = sister.msg;
       this.$parent.$emit('checkMenu', this.data[0].pid);
     },
   },
