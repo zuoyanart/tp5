@@ -17,4 +17,16 @@
       $article = model("Tree")->find($param['id']);
       return formatJson($article);
     }
+
+    public function sister() {
+      $param = input('post.');
+      $nodes = model("Tree")->pageSister($param['nodeid']);
+      return formatJson($nodes);
+    }
+
+    public function crumb() {
+      $param = input('post.');
+      $nodes = model("Tree")->crumb($param['nodeid']);
+      return formatJson($nodes);
+    }
  }

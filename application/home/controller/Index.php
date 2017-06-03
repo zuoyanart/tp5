@@ -1,5 +1,5 @@
 <?php
-namespace app\index\controller;
+namespace app\home\controller;
 use think\Db;
 
 class Index extends Base {
