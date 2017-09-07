@@ -32,8 +32,8 @@ Vue.component(baseCrumb.name, baseCrumb);
 Vue.component(baseBlock.name, baseBlock);
 
 const router = new VueRouter({
-    mode: 'history',
-    routes
+  mode: 'history',
+  routes
 });
 
 
@@ -46,18 +46,18 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach(function() { //添加访问统计代码的执行,详见百度统计api
   //  window.document.title = transition.to.title || 'Default page title';
-    // window.prerenderReady = false;
-    if (_hmt) {
-        let currentUrl = document.location.href;
-        _hmt.push(['_trackPageview', currentUrl]);
-    }
+  // window.prerenderReady = false;
+  if (_hmt) {
+    let currentUrl = document.location.href;
+    _hmt.push(['_trackPageview', currentUrl]);
+  }
 });
 
 
 
 
 const app = new Vue({
-    el: '#app',
-    render: h => h(App),
-    router //使用路由器
+  el: '#app',
+  render: h => h(App),
+  router //使用路由器
 });
