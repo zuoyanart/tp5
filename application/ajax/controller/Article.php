@@ -12,9 +12,11 @@
         $defParam = [
           'cp'=>1,
           'mp'=>10,
-          'istp'=>false
+          'istp'=>false,
+          'nodeid'=>1
         ];
         $param = input('post.');
+        echo $param['nodeid'];
         $param = array_merge($defParam, $param);
         $articleM = model("Article");
         $articles = $articleM->page($param['nodeid'], $param['cp'], $param['mp'], $param['istp']);
