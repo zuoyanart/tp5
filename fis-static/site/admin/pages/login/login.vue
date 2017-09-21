@@ -122,7 +122,6 @@ export default {
         },
         setSrc() {
             this.src = '/plugin/captcha?p=' + new Date().getTime();
-            console.log("asd");
         },
         submitHandle: async function() {
             let self = this;
