@@ -1,14 +1,4 @@
 <?php
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2006-2016 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: 流年 <liu21st@gmail.com>
-// +----------------------------------------------------------------------
-
 /**
  * 获取客户端ip
  * @method get_ip
@@ -51,18 +41,14 @@ function random_char($length) {
  * @return [type]          [description]
  */
  function sub_str($string, $len, $cnCharWidth = 2) {
-
      $len = $len * $cnCharWidth;
      $suffix = "...";
      $newStr = "";
-
      for ($i = 0, $j = 0; $i < $len; $i++, $j++) {
-
          if (!isset($string[$j])) {
              $suffix = "";
              break;
          }
-
          $start = $j;
          while ($j < ($start +3) && !(ord($string[$j]) < 0x80)) {
              $j++;
@@ -78,16 +64,15 @@ function random_char($length) {
 
          $newStr .= substr($string, $start, $charLen);
      }
-
      return $newStr . $suffix;
  }
 
-
+ //格式化json数据
  function formatJson($data, $count=0) {
    $json = [
      'state'=>true,
      'msg'=> $data,
      'count'=>(int)$count
    ];
-   return json_encode($json);
+   return json($json);
  }

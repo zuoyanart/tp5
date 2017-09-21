@@ -15,8 +15,8 @@
           'istp'=>false,
           'nodeid'=>1
         ];
-        $param = input('post.');
-        echo $param['nodeid'];
+
+        $param = input('post.');//获取所有post参数
         $param = array_merge($defParam, $param);
         $articleM = model("Article");
         $articles = $articleM->page($param['nodeid'], $param['cp'], $param['mp'], $param['istp']);
