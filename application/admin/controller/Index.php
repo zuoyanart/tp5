@@ -5,11 +5,11 @@ use think\Db;
 class Index extends Base {
   protected $abc = "abc";
 
-    public function index()
-    {
-      return $this->fetch();
+    public function index() {
+       $this.redirect("/admin/login");
+      // return $this->fetch();
     }
-    
+
 
     public function find() {
       $articleM = model("Article");

@@ -8,12 +8,9 @@
    */
   class Base extends Controller {
      public function _initializa() {
-       $key = Cookie::get("key");
-       $username = Cookie::get("username");
-       $id = Cookie::get("id");
-       if(true) {
-         $this.redirect("/admin/login");
-       }
-
+      //  $key = Cookie::get("key");
+      //  $username = Cookie::get("username");
+      //  $id = Cookie::get("id");
+       $this.redirect("/admin/login");
      }
   }
