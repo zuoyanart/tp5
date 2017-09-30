@@ -6,8 +6,7 @@ class Index extends Base {
   protected $abc = "abc";
 
     public function index() {
-       $this.redirect("/admin/login");
-      // return $this->fetch();
+      return $this->fetch();
     }
 
 

@@ -1,8 +1,8 @@
-<style lang="less">@import "../../../../assets/less/mixin.less";
+<style lang="less">
+@import "../../../../assets/less/mixin.less";
 body {
     background-color: #2E363F!important;
 }
-
 .login {
     width: 360px;
     height: 342px;
@@ -67,76 +67,75 @@ body {
 import tools from 'pizzatools';
 
 export default {
-    data() {
-        return {
-            src: '/plugin/captcha',
-            form: {
-                name: "",
-                password: "",
-                code: ""
-            },
-            rules: {
-                name: [{
-                    validator: this.validateUsername,
-                    trigger: 'blur',
-                    message: "请填写1-20位的用户名"
-                }],
-                password: [{
-                    validator: this.validatePassword,
-                    trigger: 'blur',
-                    message: "请填写6-20位的密码"
-                }],
-                code: [{
-                    validator: this.validateCode,
-                    message: "请填写4位的验证码",
-                    trigger: 'blur'
-                }]
-            }
-        };
-    },
-    methods: {
-        validateUsername(rule, value, callback) {
-            let len = value.length;
-            console.log(len);
-            if (len > 20 || len == 0) {
-                callback(new Error("请填写用户名"));
-            } else {
-                callback();
-            }
-        },
-        validatePassword(rule, value, callback) {
-            let len = value.length;
-            if (len > 20 || len < 6) {
-                callback(new Error("请填写密码"));
-            } else {
-                callback();
-            }
-        },
-        validateCode(rule, value, callback) {
-            let len = value.length;
-            if (len != 4) {
-                callback(new Error("请填写4位验证码"));
-            } else {
-                callback();
-            }
-        },
-        setSrc() {
-            this.src = '/plugin/captcha?p=' + new Date().getTime();
-        },
-        submitHandle: async function() {
-            let self = this;
-            this.$refs.form.validate(async(valid) => {
-                if (valid) {
-                    let doc = await tools.httpAgent('/admin/login/login', 'post', self.form);
-                    if (doc.state) {
-                        document.location.href = "/admin";
-                    } else {
-                        self.$layer.msg("帐号或者密码错误");
-                        this.setSrc();
-                    }
-                }
-            });
-        }
-    }
+	data() {
+		return {
+			src: '/plugin/captcha',
+			form: {
+				name: "",
+				password: "",
+				code: ""
+			},
+			rules: {
+				name: [{
+					validator: this.validateUsername,
+					trigger: 'blur',
+					message: "请填写1-20位的用户名"
+				}],
+				password: [{
+					validator: this.validatePassword,
+					trigger: 'blur',
+					message: "请填写6-20位的密码"
+				}],
+				code: [{
+					validator: this.validateCode,
+					message: "请填写4位的验证码",
+					trigger: 'blur'
+				}]
+			}
+		};
+	},
+	methods: {
+		validateUsername(rule, value, callback) {
+			let len = value.length;
+			if (len > 20 || len == 0) {
+				callback(new Error("请填写用户名"));
+			} else {
+				callback();
+			}
+		},
+		validatePassword(rule, value, callback) {
+			let len = value.length;
+			if (len > 20 || len < 6) {
+				callback(new Error("请填写密码"));
+			} else {
+				callback();
+			}
+		},
+		validateCode(rule, value, callback) {
+			let len = value.length;
+			if (len != 4) {
+				callback(new Error("请填写4位验证码"));
+			} else {
+				callback();
+			}
+		},
+		setSrc() {
+			this.src = '/plugin/captcha?p=' + new Date().getTime();
+		},
+		submitHandle: async function() {
+			let self = this;
+			this.$refs.form.validate(async(valid) => {
+				if (valid) {
+					let doc = await tools.httpAgent('/admin/login/login', 'post', self.form);
+					if (doc.state) {
+						document.location.href = "/admin";
+					} else {
+						self.$layer.msg("帐号或者密码错误");
+						this.setSrc();
+					}
+				}
+			});
+		}
+	}
 }
 </script>
