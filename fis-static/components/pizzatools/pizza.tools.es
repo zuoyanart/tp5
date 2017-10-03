@@ -6,6 +6,7 @@
  * @Date: 14-2-12 下午3:16
  * --------------------------------------------------------
  */
+import Vue from 'vue';
 import vueLayer from 'vue-layer';
 const layer = vueLayer(Vue);
 

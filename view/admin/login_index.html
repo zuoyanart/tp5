@@ -17,26 +17,13 @@
 
 <script data-loader="data-loader" charset="utf-8" src="/static/plugins/mod.js"></script>
 <script type="text/javascript" src="/static/node_modules/process/browser.js"></script>
+<script type="text/javascript" src="/static/node_modules/vue/dist/vue.min.js"></script>
 <script type="text/javascript" src="/static/node_modules/vue-layer/dist/vue-layer.js"></script>
 <script type="text/javascript" src="/static/pkg/view/admin/login_index.html_aio.js"></script>
-<script type="text/javascript" src="/static/node_modules/vue/dist/vue.min.js"></script>
-<script type="text/javascript" src="/static/pkg/view/admin/login_index.html_aio_2.js"></script>
-<script src="https://cdn.bootcss.com/vue/2.3.3/vue.min.js"></script>
-<script src="https://cdn.bootcss.com/vue-router/2.5.3/vue-router.min.js"></script>
-<script src="https://cdn.bootcss.com/element-ui/1.3.2/index.js"></script>
-<script src="https://cdn.bootcss.com/babel-polyfill/7.0.0-alpha.9/polyfill.min.js"></script>
+<script type="text/javascript" src="/static/node_modules/babel-polyfill/dist/polyfill.min.js"></script>
+<script type="text/javascript" src="/static/site/admin/loginmain.js"></script>
 <script type="text/javascript">
-        var login = require('site/admin/pages/login/login.vue');
-        var layer = require('node_modules/vue-layer/dist/vue-layer');
-        var ElementUI = require('node_modules/element-ui/lib/element-ui.common');
-
-        Vue.use(ElementUI);
-
-        Vue.prototype.$layer = layer(Vue);
-        var app = new Vue({
-            el: '#app',
-            render: h => h(login),
-        });
+        require('admin/loginmain');
     </script>
 </body>
 

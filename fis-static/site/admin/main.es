@@ -1,20 +1,24 @@
 /**
-* @Author: 左盐
-* @Date:   2017-16-03 20:54:48
-* @Email:  huabinglan@163.com
-* @Project: xxxx
-* @Last modified by:   左盐
-* @Last modified time: 2017-16-03 21:09:20
-*/
+ * @Author: 左盐
+ * @Date:   2017-16-03 20:54:48
+ * @Email:  huabinglan@163.com
+ * @Project: xxxx
+ * @Last modified by:   左盐
+ * @Last modified time: 2017-16-03 21:09:20
+ */
 
-
+import Vue from 'vue';
 import App from './App.vue';
 import layer from 'vue-layer';
 import '../../assets/css/reset.css';
 import './assets/base.less';
 import tools from 'pizzatools';
+import '/node_modules/element-ui/lib/theme-default/index.css';
+import ElementUI from 'element-ui';
+import VueRouter from 'vue-router';
+require('babel-polyfill');
 
-
+Vue.use(ElementUI);
 Vue.use(VueRouter);
 Vue.prototype.$tools = tools;
 
@@ -33,56 +37,56 @@ const user = resolve => require(['./pages/user/user.vue'], resolve);
 const useredit = resolve => require(['./pages/user/edit.vue'], resolve);
 
 const routes = [{
-    path: '/',
-    component: require('./pages/index.vue')
+  path: '/',
+  component: require('./pages/index.vue')
 }, {
-    path: '/news',
-    component: news,
+  path: '/news',
+  component: news,
 }, {
-    path: '/news/edit/:id',
-    component: newsedit
+  path: '/news/edit/:id',
+  component: newsedit
 }, {
-    path: '/news/create',
-    component: newsedit
+  path: '/news/create',
+  component: newsedit
 }, {
-    path: '/block',
-    component: block
+  path: '/block',
+  component: block
 }, {
-    path: '/block/edit/:id',
-    component: blockedit
+  path: '/block/edit/:id',
+  component: blockedit
 }, {
-    path: '/block/edit',
-    component: blockedit
+  path: '/block/edit',
+  component: blockedit
 }, {
-    path: '/guestbook',
-    component: guestbook
+  path: '/guestbook',
+  component: guestbook
 }, {
-    path: '/user',
-    component: user
+  path: '/user',
+  component: user
 }, {
-    path: '/user/edit/:id',
-    component: useredit
+  path: '/user/edit/:id',
+  component: useredit
 }, {
-    path: '/user/edit',
-    component: useredit
+  path: '/user/edit',
+  component: useredit
 }, {
-    path: '/tree',
-    component: tree
+  path: '/tree',
+  component: tree
 }, {
-    path: '/tree/add/:id',
-    component: treeedit
+  path: '/tree/add/:id',
+  component: treeedit
 }, {
-    path: '/tree/edit/:id',
-    component: treeedit
+  path: '/tree/edit/:id',
+  component: treeedit
 }, ];
 
 
 const router = new VueRouter({
-    routes
+  routes
 });
 
 const app = new Vue({
-    // el: '#app',
-    render: h => h(App),
-    router //使用路由器
+  // el: '#app',
+  render: h => h(App),
+  router //使用路由器
 }).$mount('#app');

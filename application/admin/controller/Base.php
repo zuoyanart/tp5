@@ -12,7 +12,7 @@
        $username = Cookie::get("username");
        $id = Cookie::get("id");
        if($key != md5($username . $id)) {
-         return $this->error('操作失败','/admin/login');
+         return $this->error('没有权限，请登录','/admin/login');
       }
      }
   }
