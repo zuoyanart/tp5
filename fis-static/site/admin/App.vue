@@ -22,12 +22,12 @@
   }
 </style>
 <style lang="less">
-    // @import "./assets/base.less";
+// @import "./assets/base.less";
 </style>
 
 <template lang="html">
 
-<div id="app">
+<div id="app1">
     <div id="header">
         <h1><i class="pzicon-pizza"></i>Pizza Admin</h1>
         <div id="user-nav">
@@ -89,38 +89,35 @@
 </template>
 
 <script>
-
-import tools from 'pizzatools';
 export default {
-    data() {
-            return {
-                show: {
-                    news: false,
-                    hudong: false,
-                    system: false,
-                },
-                username: ""
-            }
-        },
-        methods: {
-            slider: function(event) {
-                let o = event.target;
-                let style = o.getAttribute("class");
-                if (style.indexOf("submenu") > -1) { //带子菜单的父对象
-                    let data = o.getAttribute("data");
-                    this.$data.show[data] = !this.$data.show[data];
-                } else {
+  data() {
+    return {
+      show: {
+        news: false,
+        hudong: false,
+        system: false,
+      },
+      username: ""
+    }
+  },
+  methods: {
+    slider: function (event) {
+      let o = event.target;
+      let style = o.getAttribute("class");
+      if (style.indexOf("submenu") > -1) { //带子菜单的父对象
+        let data = o.getAttribute("data");
+        this.$data.show[data] = !this.$data.show[data];
+      } else {
 
-                }
-            },
-            loginout: async function() {
-                await tools.httpAgent("/admin/login/loginout", "post", {});
-                document.location.href = "/admin/login";
-            }
-        },
-        mounted() {
-            this.username = tools.getCookie("username");
-        }
+      }
+    },
+    loginout: async function () {
+      await this.$tools.httpAgent("/admin/login/loginout", "post", {});
+      document.location.href = "/admin/login";
+    }
+  },
+  mounted() {
+    this.username = this.$tools.getCookie("username");
+  }
 }
-
 </script>

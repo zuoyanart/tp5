@@ -48,6 +48,7 @@ return [
     'class_suffix'           => false,
     // 控制器类后缀
     'controller_suffix'      => false,
+    'model_suffix'      => true,
 
     // +----------------------------------------------------------------------
     // | 模块设置

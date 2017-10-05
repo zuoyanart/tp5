@@ -14,4 +14,27 @@ class Tree extends Base {
       $json = $tree->pageall();
       return json($json);
     }
+
+    public function get(TreeModel $tree){
+      $param = input('post.');
+      $data = $tree->read($param['id']);
+      return json($data);
+    }
+
+    public function del(TreeModel $tree) {
+
+    }
+
+    public function update(TreeModel $tree) {
+      $param = input('post.');
+      $data = $tree->edit($param);
+      // $data = TreeModel::update($param);
+      return json($data);
+    }
+
+    public function create(TreeModel $tree) {
+        $data = $tree->saveData(input('post.'));
+        return json($data);
+    }
+
 }

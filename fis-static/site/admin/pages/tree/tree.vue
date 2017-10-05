@@ -4,6 +4,7 @@
 
 <template lang="html">
 <div id="main">
+    <!-- <router-link to="/tree/add/1">编辑</router-link> -->
     <pztree :docs="datalist" :handle="handle"></pztree>
 </div>
 

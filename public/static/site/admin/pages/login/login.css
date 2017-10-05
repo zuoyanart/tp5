@@ -1,0 +1,44 @@
+/**flex 父元素定义 **/
+/**flex 子元素定义 **/
+body {
+  background-color: #2E363F!important;
+}
+.login {
+  width: 360px;
+  height: 342px;
+  margin: 7% auto;
+  padding: 40px 0;
+  border-top: 1px solid #3f4954;
+  border-bottom: 1px solid #3f4954;
+}
+.login > h2 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.login > .login-content {
+  width: 100%;
+  height: 343px;
+}
+.login > .login-content > div > button {
+  float: right;
+}
+.code > .el-form-item__content {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-box;
+  display: flex;
+}
+.code > .el-form-item__content img {
+  width: 100px;
+  height: 37px;
+  margin-left: 15px;
+}
+.code > .el-form-item__content .el-input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 0;
+}
