@@ -12,7 +12,7 @@
         "assets/css/reset.css": {
             "uri": "/static/assets/css/reset.css",
             "type": "css",
-            "aioPkg": "pkg/view/home/index_touch.html_aio.css"
+            "aioPkg": "pkg/view/home/contentpage_index.html_aio.css"
         },
         "assets/less/var.less": {
             "uri": "/static/assets/less/var.css",
@@ -437,8 +437,7 @@
         },
         "site/home/App.vue": {
             "uri": "/static/site/home/App.js",
-            "type": "js",
-            "aioPkg": "pkg/view/home/index_index.html_aio.js"
+            "type": "js"
         },
         "site/home/assets/less/index.less": {
             "uri": "/static/site/home/assets/less/index.css",
@@ -446,7 +445,8 @@
         },
         "site/home/assets/less/list.less": {
             "uri": "/static/site/home/assets/less/list.css",
-            "type": "css"
+            "type": "css",
+            "aioPkg": "pkg/view/home/contentpage_index.html_aio.css"
         },
         "site/home/assets/less/team.less": {
             "uri": "/static/site/home/assets/less/team.css",
@@ -461,16 +461,14 @@
             "type": "js",
             "deps": [
                 "pizzatools"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_3.js"
+            ]
         },
         "site/home/components/base-crumb/crumb.vue": {
             "uri": "/static/site/home/components/base-crumb/crumb.js",
             "type": "js",
             "deps": [
                 "pizzatools"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_3.js"
+            ]
         },
         "site/home/components/base-sidebar/sidebar.vue": {
             "uri": "/static/site/home/components/base-sidebar/sidebar.js",
@@ -486,8 +484,7 @@
         },
         "site/home/components/list-img/list-0.css": {
             "uri": "/static/site/home/components/list-img/list-0.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/components/list-text/list.vue": {
             "uri": "/static/site/home/components/list-text/list.js",
@@ -499,8 +496,7 @@
         },
         "site/home/components/list-text/list-0.css": {
             "uri": "/static/site/home/components/list-text/list-0.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/components/swiper-bigimg/swiper.vue": {
             "uri": "/static/site/home/components/swiper-bigimg/swiper.js",
@@ -508,13 +504,11 @@
             "deps": [
                 "node_modules/uuid/v4.js",
                 "site/home/components/swiper-bigimg/swiper.css"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_2.js"
+            ]
         },
         "site/home/components/swiper-bigimg/swiper.css": {
             "uri": "/static/site/home/components/swiper-bigimg/swiper.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "home/main": {
             "uri": "/static/site/home/main.js",
@@ -527,8 +521,7 @@
                 "pizzatools",
                 "site/home/components/base-crumb/crumb.vue",
                 "site/home/components/base-block/block.vue"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_3.js"
+            ]
         },
         "site/home/pages/content.vue": {
             "uri": "/static/site/home/pages/content.js",
@@ -540,8 +533,7 @@
         },
         "site/home/pages/content.css": {
             "uri": "/static/site/home/pages/content.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/pages/index.vue": {
             "uri": "/static/site/home/pages/index.js",
@@ -550,13 +542,11 @@
                 "site/home/components/swiper-bigimg/swiper.vue",
                 "site/home/components/base-block/block.vue",
                 "site/home/pages/index.css"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_3.js"
+            ]
         },
         "site/home/pages/index.css": {
             "uri": "/static/site/home/pages/index.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/pages/list-img.vue": {
             "uri": "/static/site/home/pages/list-img.js",
@@ -568,8 +558,7 @@
         },
         "site/home/pages/list-img.css": {
             "uri": "/static/site/home/pages/list-img.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/pages/list.vue": {
             "uri": "/static/site/home/pages/list.js",
@@ -581,21 +570,18 @@
         },
         "site/home/pages/list.css": {
             "uri": "/static/site/home/pages/list.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/pages/main.vue": {
             "uri": "/static/site/home/pages/main.js",
             "type": "js",
             "deps": [
                 "site/home/pages/main.css"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_2.js"
+            ]
         },
         "site/home/pages/main.css": {
             "uri": "/static/site/home/pages/main.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/pages/node.vue": {
             "uri": "/static/site/home/pages/node.js",
@@ -606,8 +592,7 @@
         },
         "site/home/pages/node.css": {
             "uri": "/static/site/home/pages/node.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "site/home/pages/team.vue": {
             "uri": "/static/site/home/pages/team.js",
@@ -618,8 +603,7 @@
         },
         "site/home/pages/team.css": {
             "uri": "/static/site/home/pages/team.css",
-            "type": "css",
-            "aioPkg": "pkg/view/home/index_index.html_aio.css"
+            "type": "css"
         },
         "home/router": {
             "uri": "/static/site/home/router.js",
@@ -636,8 +620,7 @@
             "deps": [
                 "site/home/pages/main.vue",
                 "site/home/pages/index.vue"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_3.js"
+            ]
         },
         "site/touch/App.vue": {
             "uri": "/static/site/touch/App.js",
@@ -768,6 +751,13 @@
                 "node_modules/process/browser.js"
             ]
         },
+        "node_modules/pzvue-checkbox/dist/pz-checkbox.js": {
+            "uri": "/static/node_modules/pzvue-checkbox/dist/pz-checkbox.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/pzvue-checkbox/dist/pz-checkbox"
+            }
+        },
         "node_modules/element-ui/lib/theme-default/index.css": {
             "uri": "/static/node_modules/element-ui/lib/theme-default/index.css",
             "type": "css",
@@ -844,8 +834,7 @@
             "deps": [
                 "node_modules/uuid/lib/rng-browser.js",
                 "node_modules/uuid/lib/bytesToUuid.js"
-            ],
-            "aioPkg": "pkg/view/home/index_index.html_aio_2.js"
+            ]
         },
         "node_modules/process/browser.js": {
             "uri": "/static/node_modules/process/browser.js",
@@ -1219,16 +1208,14 @@
             "type": "js",
             "extras": {
                 "moduleId": "node_modules/uuid/lib/rng-browser"
-            },
-            "aioPkg": "pkg/view/home/index_index.html_aio_2.js"
+            }
         },
         "node_modules/uuid/lib/bytesToUuid.js": {
             "uri": "/static/node_modules/uuid/lib/bytesToUuid.js",
             "type": "js",
             "extras": {
                 "moduleId": "node_modules/uuid/lib/bytesToUuid"
-            },
-            "aioPkg": "pkg/view/home/index_index.html_aio_2.js"
+            }
         },
         "node_modules/element-ui/lib/utils/popup/popup-manager.js": {
             "uri": "/static/node_modules/element-ui/lib/utils/popup/popup-manager.js",
@@ -1567,12 +1554,53 @@
             ],
             "aioPkg": "pkg/view/admin/login_index.html_aio.js"
         },
-        "node_modules/pzvue-checkbox/dist/pz-checkbox.js": {
-            "uri": "/static/node_modules/pzvue-checkbox/dist/pz-checkbox.js",
-            "type": "js",
-            "extras": {
-                "moduleId": "node_modules/pzvue-checkbox/dist/pz-checkbox"
-            }
+        "pkg/view/admin/index_index.html_map.js": {
+            "uri": "/static/pkg/view/admin/index_index.html_map.js",
+            "type": "js"
+        },
+        "pkg/view/admin/index_index.html_aio.js": {
+            "uri": "/static/pkg/view/admin/index_index.html_aio.js",
+            "type": "js"
+        },
+        "pkg/view/admin/index_index.html_aio_2.js": {
+            "uri": "/static/pkg/view/admin/index_index.html_aio_2.js",
+            "type": "js"
+        },
+        "pkg/view/admin/index_index.html_aio_3.js": {
+            "uri": "/static/pkg/view/admin/index_index.html_aio_3.js",
+            "type": "js"
+        },
+        "pkg/view/admin/index_index.html_aio.css": {
+            "uri": "/static/pkg/view/admin/index_index.html_aio.css",
+            "type": "css"
+        },
+        "pkg/view/admin/login_index.html_aio.js": {
+            "uri": "/static/pkg/view/admin/login_index.html_aio.js",
+            "type": "js"
+        },
+        "pkg/view/admin/login_index.html_aio.css": {
+            "uri": "/static/pkg/view/admin/login_index.html_aio.css",
+            "type": "css"
+        },
+        "pkg/view/home/index_touch.html_map.js": {
+            "uri": "/static/pkg/view/home/index_touch.html_map.js",
+            "type": "js"
+        },
+        "pkg/view/home/index_touch.html_aio.js": {
+            "uri": "/static/pkg/view/home/index_touch.html_aio.js",
+            "type": "js"
+        },
+        "pkg/view/home/index_touch.html_aio_2.js": {
+            "uri": "/static/pkg/view/home/index_touch.html_aio_2.js",
+            "type": "js"
+        },
+        "pkg/view/home/index_touch.html_aio_3.js": {
+            "uri": "/static/pkg/view/home/index_touch.html_aio_3.js",
+            "type": "js"
+        },
+        "pkg/view/home/index_touch.html_aio.css": {
+            "uri": "/static/pkg/view/home/index_touch.html_aio.css",
+            "type": "css"
         }
     },
     "pkg": {
@@ -1763,54 +1791,12 @@
                 "assets/css/iconfont.css"
             ]
         },
-        "pkg/view/home/index_index.html_aio.js": {
-            "type": "js",
-            "uri": "/static/pkg/view/home/index_index.html_aio.js",
-            "has": [
-                "plugins/mod.js",
-                "pkg/view/home/index_index.html_map.js",
-                "site/home/App.vue",
-                "node_modules/process/browser.js"
-            ]
-        },
-        "pkg/view/home/index_index.html_aio_2.js": {
-            "type": "js",
-            "uri": "/static/pkg/view/home/index_index.html_aio_2.js",
-            "has": [
-                "site/home/pages/main.vue",
-                "node_modules/uuid/lib/rng-browser.js",
-                "node_modules/uuid/lib/bytesToUuid.js",
-                "node_modules/uuid/v4.js",
-                "site/home/components/swiper-bigimg/swiper.vue"
-            ]
-        },
-        "pkg/view/home/index_index.html_aio_3.js": {
-            "type": "js",
-            "uri": "/static/pkg/view/home/index_index.html_aio_3.js",
-            "has": [
-                "pizzatools",
-                "site/home/components/base-block/block.vue",
-                "site/home/pages/index.vue",
-                "home/router",
-                "site/home/components/base-crumb/crumb.vue",
-                "home/main"
-            ]
-        },
         "pkg/view/home/index_index.html_aio.css": {
             "type": "js",
             "uri": "/static/pkg/view/home/index_index.html_aio.css",
             "has": [
                 "assets/css/reset.css",
-                "site/home/pages/node.css",
-                "site/home/components/list-text/list-0.css",
-                "site/home/pages/list.css",
-                "site/home/components/list-img/list-0.css",
-                "site/home/pages/list-img.css",
-                "site/home/pages/content.css",
-                "site/home/pages/team.css",
-                "site/home/pages/main.css",
-                "site/home/components/swiper-bigimg/swiper.css",
-                "site/home/pages/index.css"
+                "site/home/assets/less/list.less"
             ]
         },
         "pkg/view/home/index_touch.html_aio.js": {
@@ -1849,6 +1835,22 @@
                 "site/touch/pages/content.css",
                 "site/touch/pages/team.css",
                 "site/touch/pages/main.css"
+            ]
+        },
+        "pkg/view/home/listpage_index.html_aio.css": {
+            "type": "js",
+            "uri": "/static/pkg/view/home/listpage_index.html_aio.css",
+            "has": [
+                "assets/css/reset.css",
+                "site/home/assets/less/list.less"
+            ]
+        },
+        "pkg/view/home/contentpage_index.html_aio.css": {
+            "type": "js",
+            "uri": "/static/pkg/view/home/contentpage_index.html_aio.css",
+            "has": [
+                "assets/css/reset.css",
+                "site/home/assets/less/list.less"
             ]
         }
     }

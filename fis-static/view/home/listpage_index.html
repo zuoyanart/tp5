@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="import" href="../../site/home/widget/meta/meta.html?__inline">
+</head>
+
+<body>
+    <link rel="import" href="../../site/home/widget/header/header.html?__inline">
+    <div id="main">
+        <ul>
+          {volist name="article" id="art"}
+          <li><a href="{$art.link}">{$art.title}</a></li>
+          {/volist}
+        </ul>
+        {$article->render()}
+    </div>
+    <link rel="import" href="../../site/home/widget/footer/footer.html?__inline">
+</body>
+
+</html>

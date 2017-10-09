@@ -1,61 +1,89 @@
 #main {
-  margin-top: 20px;
+	margin-top: 20px;
+}
+
+.pagination {
+	width: 100%;
+	height: 50px;
+	clear: both;
+
+	li {
+		float: left;
+		margin-left: 2px;
+		width: 28px;
+		height: 28px;
+		border: 1px solid #ccc;
+		text-align: center;
+		line-height: 28px;
+		color: #000;
+
+		&.active {
+			border: 1px solid #d1dbe5;
+			background-color: #20a0ff;
+			color: #fff;
+		}
+
+		&.disabled {
+			background-color: #fff;
+			color: #e4e4e4;
+		}
+	}
 }
 
 .list-right {
-  width: 1000px;
-  float: left;
-  margin-left: 20px;
+	width: 1000px;
+	float: left;
+	margin-left: 20px;
 
-  .li {
-    padding-top: 30px;
-    height: 130px;
-    border-bottom: 1px dashed #dfe1e2;
+	.li {
+		padding-top: 30px;
+		height: 130px;
+		border-bottom: 1px dashed #dfe1e2;
 
-    a {
-      color: #004276;
-      text-decoration: none;
-      font-size: 18px;
-    }
+		a {
+			color: #004276;
+			text-decoration: none;
+			font-size: 18px;
+		}
 
-    p {
-      color: #657081;
-      line-height: 24px;
-    }
+		p {
+			color: #657081;
+			line-height: 24px;
+		}
 
-    .list-text-h2 {
-      font-size: 18px;
-      line-height: 30px;
-      margin-bottom: 10px;
-      position: relative;
+		.list-text-h2 {
+			font-size: 18px;
+			line-height: 30px;
+			margin-bottom: 10px;
+			position: relative;
 
-      span {
-        position: absolute;
-        right: 10px;
-        color: #657081;
-        font-size: 14px;
-      }
-    }
-  }
+			span {
+				position: absolute;
+				right: 10px;
+				color: #657081;
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 .list-left {
-  width: 200px;
-  float: left;
+	width: 200px;
+	float: left;
 
-  .el-menu-vertical-demo {
-    width: 200px;
+	.el-menu-vertical-demo {
+		width: 200px;
 
-    a {
-      display: inline-block;
-      width: 100%;
-      height: 56px;
-      color: #bfcbd9;
-      text-decoration: none;
-    }
+		a {
+			display: inline-block;
+			width: 100%;
+			height: 56px;
+			color: #bfcbd9;
+			text-decoration: none;
+		}
 
-    .router-link-active {
-      color: #fff;
-    }
-  }
+		.router-link-active {
+			color: #fff;
+		}
+	}
 }

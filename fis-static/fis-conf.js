@@ -50,11 +50,8 @@ fis.match('**/*', {
   .match(/^\/(site)\/(.*)\.(es|js)$/i, {
     parser: fis.plugin('babel-5.x', {
       sourceMaps: false, //启用调试
-
       // blacklist: ['regenerator'],
-
       stage: 3 //ES7不同阶段语法提案的转码规则（共有4个阶段）
-
     }),
     isMod: true,
     id: '$2',
