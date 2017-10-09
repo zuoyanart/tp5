@@ -1,0 +1,39 @@
+.header-menu{line-height:64px;width:100%;height:64px;background-color:#232323}
+.header-menu .header-menu-c{position:relative;width:1200px;height:100%;margin:0 auto}
+.header-menu .header-menu-c img{height:60px;margin-top:3px}
+.header-menu .header-menu-c div{position:absolute;top:0;right:0;width:auto;height:100%}
+.header-menu .header-menu-c div a{font-size:14px;line-height:33px;display:inline-block;width:90px;height:33px;margin:0 10px;text-align:center;color:#ccc;text-decoration:none}
+.header-menu .header-menu-c .router-link-active{color:#fff;background-color:#fd8200;border-radius:4px}
+.item-gap{width:100%;height:126px;border-top:1px solid #d0d0d0;border-bottom:1px solid #d0d0d0;background-color:#F4F4F4;text-align:center;color:#4c4c4c;margin-top:30px;margin-bottom:30px}
+.item-gap h2{margin-top:36px}
+.item-gap p{font-size:12px}
+.index-service-item{width:1210px;height:257px;margin:0 auto;clear:both;margin-top:60px}
+.index-service-item .index-service-item-sub{width:292px;height:257px;background-color:#f7f7f7;float:left;margin-left:10px;text-align:center;padding-top:50px}
+.index-service-item .index-service-item-sub i{font-size:70px}
+.index-service-item .index-service-item-sub h2{color:#333;line-height:40px;font-size:16px;margin-top:20px}
+.index-service-item .index-service-item-sub p{color:#7F7F7F;font-size:12px}
+.index-aboutus{width:1200px;margin:30px auto;border:1px solid #e5e5e5;padding:10px;color:#7f7f7f;line-height:24px;font-size:14px;text-align:center}
+.index-aboutus p{text-align:left}
+.index-aboutus img{margin-top:30px}
+.index-kouhao{width:1200px;height:331px;clear:both;margin:0 auto}
+.index-kouhao div{width:399px;height:100%;float:left;border-right:1px solid #e5e5e5;padding-left:20px}
+.index-kouhao div:last-child{border-right:0}
+.index-kouhao div h3{font-size:34px;color:#8e8e8e}
+.index-kouhao div h4{font-size:20px;color:#fda562;margin-bottom:40px}
+.index-kouhao div p{color:#7f7f7f;font-size:14px;line-height:24px;padding-right:50px}
+.index-contact{width:1200px;height:442px;margin:0 auto 100px;clear:both}
+.index-contact .index-contact-left{float:left;width:850px;height:100%;border:1px solid #ccc}
+.index-contact .index-contact-right{float:left;width:329px;height:100%;padding-left:20px;padding-top:50px}
+.index-contact .index-contact-right p{line-height:30px;color:#7f7f7f;font-size:14px}
+#main{clear:both;width:1200px;min-height:100px;margin:20px auto}
+#main .crumb{margin:0 0 10px}
+.footer{width:100%;height:50px;padding:40px 0 100px;background-color:#2a313d}
+.footer .footer-c{width:1200px;height:100%;margin:0 auto;text-align:center;color:#7b7b7b}
+.online-cus{position:fixed;right:0;top:100px;z-index:1000;-webkit-transition:all ease .5s}
+.online-cus:hover .online-cus-bh{right:0}
+.online-cus .online-cus-check{transition:all ease .5s;width:26px;height:104px;background-color:#009fe9;border-radius:5px 0 0 5px;text-align:center;color:#fff;padding-top:12px;cursor:pointer;position:absolute;right:0}
+.online-cus .online-cus-bh{transition:all ease .5s;position:absolute;right:-200px;width:140px;height:180px;border:3px solid #F7BA2A;background-color:#F7BA2A;border-radius:3px;z-index:10001}
+.online-cus .online-cus-bh h2{color:#fff;font-size:16px;fongt-weight:900;height:30px;line-height:30px}
+.online-cus .online-cus-bh ul{background-color:#fff;width:130px;height:130px;padding:1px 0 0 5px}
+.online-cus .online-cus-bh ul li{margin:5px 0}
+.online-cus .online-cus-bh ul img{vertical-align:middle}

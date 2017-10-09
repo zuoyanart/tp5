@@ -1,0 +1,9 @@
+#main{margin-top:20px}
+#main-p{width:100%}
+#main-p .bannerimg{width:100%;height:265px;background-color:#ccc;background-repeat:no-repeat;background-position:center center;margin-bottom:30px}
+.list-right{width:980px;float:left;margin-left:20px}
+.list-right ul{clear:both}
+.list-right ul li{position:relative;float:left;width:291px;height:238px}
+.list-right ul a{color:#000;display:inline-block;width:100%;height:100%}
+.list-right ul a:hover p{bottom:30px;background-color:#363636;color:#fff}
+.list-right ul p{position:absolute;bottom:0;background-color:#f2efef;height:45px;text-align:center;line-height:45px;width:100%;-webkit-transition:all ease .3s}

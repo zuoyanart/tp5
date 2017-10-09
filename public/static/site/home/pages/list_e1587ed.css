@@ -1,0 +1,11 @@
+#main{margin-top:20px}
+.list-right{width:1000px;float:left;margin-left:20px}
+.list-right .li{padding-top:30px;height:130px;border-bottom:1px dashed #dfe1e2}
+.list-right .li a{color:#004276;text-decoration:none;font-size:18px}
+.list-right .li p{color:#657081;line-height:24px}
+.list-right .li .list-text-h2{font-size:18px;line-height:30px;margin-bottom:10px;position:relative}
+.list-right .li .list-text-h2 span{position:absolute;right:10px;color:#657081;font-size:14px}
+.list-left{width:200px;float:left}
+.list-left .el-menu-vertical-demo{width:200px}
+.list-left .el-menu-vertical-demo a{display:inline-block;width:100%;height:56px;color:#bfcbd9;text-decoration:none}
+.list-left .el-menu-vertical-demo .router-link-active{color:#fff}

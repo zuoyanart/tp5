@@ -1,0 +1,13 @@
+.team-myteam{height:360px;text-align:center;padding-top:60px;padding-bottom:80px}
+.team-myteam .team-h2{height:40px;line-height:40px;font-size:30px;color:#02b2b5;margin-bottom:10px}
+.team-myteam h3{font-size:16px;margin-bottom:15px}
+.team-myteam span{display:inline-block;width:26px;height:2px;border-bottom:2px solid #02b2b5;margin-bottom:20px}
+.team-myteam p{line-height:32px}
+.team-list{width:1200px;min-height:100px;margin:20px auto;clear:both}
+.team-list li{width:300px;height:450px;float:left;margin-left:76px;margin-bottom:35px}
+.team-list li .team-list-div{width:300px;height:395px;overflow:hidden}
+.team-list li .team-list-div:hover img{margin:-25px 0;width:325px;height:420px}
+.team-list li .team-list-div img{-webkit-transition:all ease .5s;width:300px;height:395px}
+.team-list li p{text-align:center}
+.team-list li p.p1{color:#666;margin-top:10px;font-size:16px}
+.team-list li p.p2{font-size:18px}

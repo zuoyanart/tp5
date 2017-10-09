@@ -604,13 +604,13 @@ define('touch/main', function(require, exports, module) {
   
   var _vueRouter2 = _interopRequireDefault(_vueRouter);
   
-  var _vueYdui = require('node_modules/vue-ydui/dist/ydui');
+  var _vueYdui = require('vue-ydui');
   
   var _vueYdui2 = _interopRequireDefault(_vueYdui);
   
-  ''/*@require /static/assets/css/reset.css*/;
+  '';
   
-  ''/*@require /static/node_modules/vue-ydui/dist/ydui.rem.css*/;
+  require('/node_modules/vue-ydui/dist/ydui.rem.css');
   
   var _routerJs = require('touch/router');
   

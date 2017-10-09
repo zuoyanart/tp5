@@ -146,7 +146,7 @@ define('site/home/components/swiper-bigimg/swiper.vue', function(require, export
   }else{
     __vue__options__ = module.exports;
   }
-  __vue__options__.template = "\n<div class=\"swiper-container\" :class=\"cls\" :id=\"id\">\r\n  <div class=\"swiper-wrapper\">\r\n    <div class=\"swiper-slide\" :style=\"{backgroundImage: 'url(' + n.timg + ')'}\" v-for=\"n in this.news\" v-if=\"!page.islink\">&nbsp;</div>\r\n    <div class=\"swiper-slide\" :style=\"{backgroundImage: 'url(' + n.timg + ')'}\" v-for=\"n in this.news\" v-if=\"page.islink\">\r\n      <router-link :to=\"n.link\">&nbsp;</router-link>\r\n    </div>\r\n  </div>\r\n  <div class=\"swiper-pagination\" :id=\"id + 'pag'\"></div>\r\n</div>\n"
+  __vue__options__.template = "\r\n<div class=\"swiper-container\" :class=\"cls\" :id=\"id\">\r\n  <div class=\"swiper-wrapper\">\r\n    <div class=\"swiper-slide\" :style=\"{backgroundImage: 'url(' + n.timg + ')'}\" v-for=\"n in this.news\" v-if=\"!page.islink\">&nbsp;</div>\r\n    <div class=\"swiper-slide\" :style=\"{backgroundImage: 'url(' + n.timg + ')'}\" v-for=\"n in this.news\" v-if=\"page.islink\">\r\n      <router-link :to=\"n.link\">&nbsp;</router-link>\r\n    </div>\r\n  </div>\r\n  <div class=\"swiper-pagination\" :id=\"id + 'pag'\"></div>\r\n</div>\r\n"
   
 
 });

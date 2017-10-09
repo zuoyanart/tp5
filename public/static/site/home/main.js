@@ -26,7 +26,7 @@ define('home/main', function(require, exports, module) {
   
   // import ElementUI from 'element-ui';
   
-  ''/*@require /static/assets/css/reset.css*/;
+  '';
   
   // import '/node_modules/element-ui/lib/theme-default/index.css';
   

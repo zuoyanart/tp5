@@ -13,7 +13,8 @@ fis.hook('commonjs', {
     'Vue': '/node_modules/vue/dist/vue.min.js',
     'vue-router': '/node_modules/vue-router/dist/vue-router.min.js',
     'xss': '/node_modules/xss/dist/xss.min.js',
-    'process/browser': '/node_modules/process/browser.js'
+    'process/browser': '/node_modules/process/browser.js',
+    'babel-polyfill': '/node_modules/babel-polyfill/dist/polyfill.min.js',
   }
 });
 fis.unhook('components')

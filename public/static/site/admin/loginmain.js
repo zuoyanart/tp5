@@ -12,15 +12,15 @@ define('admin/loginmain', function(require, exports, module) {
   
   var _vueLayer2 = _interopRequireDefault(_vueLayer);
   
-  ''/*@require /static/assets/css/reset.css*/;
+  '';
   
-  ''/*@require /static/site/admin/assets/base.css*/;
+  '';
   
   var _pizzatools = require('pizzatools');
   
   var _pizzatools2 = _interopRequireDefault(_pizzatools);
   
-  ''/*@require /static/node_modules/element-ui/lib/theme-default/index.css*/;
+  '';
   
   var _elementUi = require('node_modules/element-ui/lib/element-ui.common');
   
@@ -30,7 +30,7 @@ define('admin/loginmain', function(require, exports, module) {
   
   var _siteAdminPagesLoginLoginVue2 = _interopRequireDefault(_siteAdminPagesLoginLoginVue);
   
-  require('node_modules/babel-polyfill/lib/index');
+  require('node_modules/babel-polyfill/dist/polyfill.min');
   
   _vue2['default'].use(_elementUi2['default']);
   _vue2['default'].prototype.$tools = _pizzatools2['default'];
