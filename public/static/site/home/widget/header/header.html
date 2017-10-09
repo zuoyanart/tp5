@@ -2,7 +2,7 @@
 <div class="header-menu">
 		<div class="header-menu-c">
 				<a href="/"><img src="/static/site/home/assets/img/logo.png" alt=""></a>
-				<div>
+				<div id="headmenu">
 						 <a href="/">首页</a>
 						 <a  href="/guoji-3-20list" class="menutop">国际</a>
 						 <a  href="/shipin-4-20list" class="menutop">视频</a>
@@ -12,3 +12,17 @@
 				</div>
 		</div>
 </div>
+<script>
+	function setUrl() {
+			var url = $('#headmenu').find('a');
+			var docUrl = document.location.pathname;
+			var len = url.length;
+			for(var i=0; i<len; i++) {
+				if($(url[i]).attr('href') == docUrl) {
+					 $(url[i]).addClass('router-link-active');
+					break;
+				}
+			}
+	}
+	setUrl();
+</script>

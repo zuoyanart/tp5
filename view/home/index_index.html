@@ -10,6 +10,7 @@
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+ 
 
 
     <link rel="stylesheet" href="/static/pkg/view/home/index_index.html_aio.css" />
@@ -22,7 +23,7 @@
 <div class="header-menu">
 		<div class="header-menu-c">
 				<a href="/"><img src="/static/site/home/assets/img/logo.png" alt=""></a>
-				<div>
+				<div id="headmenu">
 						 <a href="/">首页</a>
 						 <a  href="/guoji-3-20list" class="menutop">国际</a>
 						 <a  href="/shipin-4-20list" class="menutop">视频</a>
@@ -131,6 +132,20 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script charset="utf-8" src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
 <script type="text/javascript">
+	function setUrl() {
+			var url = $('#headmenu').find('a');
+			var docUrl = document.location.pathname;
+			var len = url.length;
+			for(var i=0; i<len; i++) {
+				if($(url[i]).attr('href') == docUrl) {
+					 $(url[i]).addClass('router-link-active');
+					break;
+				}
+			}
+	}
+	setUrl();
+
+
 		var _hmt = _hmt || [];
 		(function() {
 				var hm = document.createElement("script");

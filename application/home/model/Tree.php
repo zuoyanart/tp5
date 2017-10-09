@@ -23,5 +23,14 @@ class Tree extends Model
       return $data;
   }
 
+  public function pageSister($nodeid) {
+    $parentNode = $this->where('id', $nodeid)->field('pid')->find();
+    trace($parentNode->pid, 'a5s4d5a4sd64646');
+    $data = $this->where([
+      'pid'=>$parentNode['pid'],
+      'ishide'=>0
+      ])->field('id,name,link')->order('id asc')->select();
+    return $data;
+  }
 
 }

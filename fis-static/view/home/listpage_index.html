@@ -17,6 +17,10 @@
           {/volist}
         </ul>
         {$article->render()}
+
+        {volist name ="tree" id="t"}
+            <a href="{$t.link}">{$t.name}</a>
+        {/volist}
     </div>
     <link rel="import" href="../../site/home/widget/footer/footer.html?__inline">
 </body>
