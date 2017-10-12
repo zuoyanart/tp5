@@ -12,7 +12,7 @@
         "assets/css/reset.css": {
             "uri": "/static/assets/css/reset.css",
             "type": "css",
-            "aioPkg": "pkg/view/home/contentpage_index.html_aio.css"
+            "aioPkg": "pkg/view/home/listpage_index.html_aio.css"
         },
         "assets/less/var.less": {
             "uri": "/static/assets/less/var.css",
@@ -186,7 +186,8 @@
         },
         "plugins/swiper/js/swiper.jquery.min.js": {
             "uri": "/static/plugins/swiper/js/swiper.jquery.min.js",
-            "type": "js"
+            "type": "js",
+            "extras": {}
         },
         "plugins/swiper/js/swiper.jquery.umd.js": {
             "uri": "/static/plugins/swiper/js/swiper.jquery.umd.js",
@@ -198,6 +199,7 @@
         "plugins/swiper/js/swiper.jquery.umd.min.js": {
             "uri": "/static/plugins/swiper/js/swiper.jquery.umd.min.js",
             "type": "js",
+            "extras": {},
             "deps": [
                 "jquery"
             ]
@@ -208,7 +210,8 @@
         },
         "plugins/swiper/js/swiper.min.js": {
             "uri": "/static/plugins/swiper/js/swiper.min.js",
-            "type": "js"
+            "type": "js",
+            "extras": {}
         },
         "site/admin/App.vue": {
             "uri": "/static/site/admin/App.js",
@@ -446,7 +449,7 @@
         "site/home/assets/less/list.less": {
             "uri": "/static/site/home/assets/less/list.css",
             "type": "css",
-            "aioPkg": "pkg/view/home/contentpage_index.html_aio.css"
+            "aioPkg": "pkg/view/home/listpage_index.html_aio.css"
         },
         "site/home/assets/less/team.less": {
             "uri": "/static/site/home/assets/less/team.css",
@@ -1553,54 +1556,6 @@
                 "node_modules/async-validator/lib/util.js"
             ],
             "aioPkg": "pkg/view/admin/login_index.html_aio.js"
-        },
-        "pkg/view/admin/index_index.html_map.js": {
-            "uri": "/static/pkg/view/admin/index_index.html_map.js",
-            "type": "js"
-        },
-        "pkg/view/admin/index_index.html_aio.js": {
-            "uri": "/static/pkg/view/admin/index_index.html_aio.js",
-            "type": "js"
-        },
-        "pkg/view/admin/index_index.html_aio_2.js": {
-            "uri": "/static/pkg/view/admin/index_index.html_aio_2.js",
-            "type": "js"
-        },
-        "pkg/view/admin/index_index.html_aio_3.js": {
-            "uri": "/static/pkg/view/admin/index_index.html_aio_3.js",
-            "type": "js"
-        },
-        "pkg/view/admin/index_index.html_aio.css": {
-            "uri": "/static/pkg/view/admin/index_index.html_aio.css",
-            "type": "css"
-        },
-        "pkg/view/admin/login_index.html_aio.js": {
-            "uri": "/static/pkg/view/admin/login_index.html_aio.js",
-            "type": "js"
-        },
-        "pkg/view/admin/login_index.html_aio.css": {
-            "uri": "/static/pkg/view/admin/login_index.html_aio.css",
-            "type": "css"
-        },
-        "pkg/view/home/index_touch.html_map.js": {
-            "uri": "/static/pkg/view/home/index_touch.html_map.js",
-            "type": "js"
-        },
-        "pkg/view/home/index_touch.html_aio.js": {
-            "uri": "/static/pkg/view/home/index_touch.html_aio.js",
-            "type": "js"
-        },
-        "pkg/view/home/index_touch.html_aio_2.js": {
-            "uri": "/static/pkg/view/home/index_touch.html_aio_2.js",
-            "type": "js"
-        },
-        "pkg/view/home/index_touch.html_aio_3.js": {
-            "uri": "/static/pkg/view/home/index_touch.html_aio_3.js",
-            "type": "js"
-        },
-        "pkg/view/home/index_touch.html_aio.css": {
-            "uri": "/static/pkg/view/home/index_touch.html_aio.css",
-            "type": "css"
         }
     },
     "pkg": {
@@ -1791,6 +1746,14 @@
                 "assets/css/iconfont.css"
             ]
         },
+        "pkg/view/home/contentpage_index.html_aio.css": {
+            "type": "js",
+            "uri": "/static/pkg/view/home/contentpage_index.html_aio.css",
+            "has": [
+                "assets/css/reset.css",
+                "site/home/assets/less/list.less"
+            ]
+        },
         "pkg/view/home/index_index.html_aio.css": {
             "type": "js",
             "uri": "/static/pkg/view/home/index_index.html_aio.css",
@@ -1840,14 +1803,6 @@
         "pkg/view/home/listpage_index.html_aio.css": {
             "type": "js",
             "uri": "/static/pkg/view/home/listpage_index.html_aio.css",
-            "has": [
-                "assets/css/reset.css",
-                "site/home/assets/less/list.less"
-            ]
-        },
-        "pkg/view/home/contentpage_index.html_aio.css": {
-            "type": "js",
-            "uri": "/static/pkg/view/home/contentpage_index.html_aio.css",
             "has": [
                 "assets/css/reset.css",
                 "site/home/assets/less/list.less"
